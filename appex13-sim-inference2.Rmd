@@ -1,0 +1,40 @@
+---
+title: "Simulation Inference Part 2"
+author: ""
+date: ""
+output: 
+  html_document:
+    toc: true
+    number_sections: false
+    toc_float: true
+    df_print: paged
+---
+
+# Packages and data
+
+```{r packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(infer)
+
+manhattan <- read_csv("data/manhattan.csv")
+mb_yawn <- read_csv("data/mb-yawn.csv")
+```
+
+## Exercises
+
+1. Analyze the Manhattan data. Is there enough evidence to suggest that the
+   mean price of a one-bedroom apartment is greater than 2400? Why or why not?
+   
+2. Analyze the Manhattan data. Is there enough evidence to suggest that the
+   median price of a one-bedroom apartment is greater than 2600? Why or why not?
+
+3. Reproduce the analysis with the yawning data. Is there enough evidence to 
+   suggest that yawning and observing someone yawn are not independent? 
+   Why or why not?
+   
+# Stage, commit and push
+
+1. Stage your modified files.
+2. Commit your changes with an informative message.
+3. Push your changes to your GitHub repo.
+4. Verify your files were updated on GitHub.
